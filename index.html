@@ -10,8 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&family=Solway:wght@300;400;500;700;800&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="justifiedGallery.min/justifiedGallery.min.css" />
+    <link rel="stylesheet" href="colorbox/example3/colorbox.css" />
 
 </head>
 
@@ -28,40 +29,57 @@
     <div class="entrada">
         <h1 class="title">KELLSEY WILLIAN</h1>
     </div>
-    <div class="galeria" id="portfolio">
+    <div class="galeria" id="mygallery" id="portfolio">
         <figure class="uma-foto">
-            <img src="imagens/galeria/1.png" alt="uma tatuagem de planta">
+            <a class="group1" href="imagens/galeria/1.png">
+                <img src="imagens/galeria/1.png" alt="uma tatuagem de planta"></a>
         </figure>
         <figure class="uma-foto">
-            <img src="imagens/galeria/2.png" alt="uma tatuagem de planta">
+            <a class="group1" href="imagens/galeria/2.png">
+                <img src="imagens/galeria/2.png" alt="uma tatuagem de planta"></a>
         </figure>
         <figure class="uma-foto">
-            <img src="imagens/galeria/3.png" alt="uma tatuagem de planta">
+            <a class="group1" href="imagens/galeria/3.png">
+                <img src="imagens/galeria/3.png" alt="uma tatuagem de planta"></a>
         </figure>
         <figure class="uma-foto">
-            <img src="imagens/galeria/4.png" alt="uma tatuagem de planta">
+            <a class="group1" href="imagens/galeria/4.png">
+                <img src="imagens/galeria/4.png" alt="uma tatuagem de planta"></a>
         </figure>
         <figure class="uma-foto">
-            <img src="imagens/galeria/5.png" alt="uma tatuagem de planta">
+            <a class="group1" href="imagens/galeria/5.png">
+                <img src="imagens/galeria/5.png" alt="uma tatuagem de planta"></a>
         </figure>
         <figure class="uma-foto">
-            <img src="imagens/galeria/6.png" alt="uma tatuagem de planta">
+            <a class="group1" href="imagens/galeria/6.png">
+                <img src="imagens/galeria/6.png" alt="uma tatuagem de planta"></a>
         </figure>
     </div>
-    <div class="orcamento" id="orcamento"> 
+    <div class="orcamento" id="orcamento">
         <p class="texto_orcamento">PENSANDO EM UMA NOVA TATUAGEM?<br>
-             FAÇA SEU ORÇAMENTO AGORA MESMO!</p>
-        <a href="https://www.instagram.com/direct/t/17846630480632151" class="botao" >ORÇAMENTO</a>
+            FAÇA SEU ORÇAMENTO AGORA MESMO!</p>
+        <a href="https://www.instagram.com/direct/t/17846630480632151" class="botao">ORÇAMENTO</a>
     </div>
-    <footer id="contato" class="contato"> 
-         <p> AMERICANA - SÃO PAULO</p>
+    <footer id="contato" class="contato">
+        <p> AMERICANA - SÃO PAULO</p>
         <div class="sociais">
             <a href="http://"><img src="imagens/icons/facebook.png" alt="facebook" width="45px"></a>
-            <a href="https://www.instagram.com/kell.williantattoo?igsh=N3FucGY1OGc0YWxi"><img src="imagens/icons/instagram.png" alt="instagram" width="45px"></a>
+            <a href="https://www.instagram.com/kell.williantattoo?igsh=N3FucGY1OGc0YWxi"><img
+                    src="imagens/icons/instagram.png" alt="instagram" width="45px"></a>
             <a href="http://"><img src="imagens/icons/whatsapp.png" alt="whatsapp" width="45px"></a>
         </div>
 
     </footer>
+
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="colorbox/jquery.colorbox.js"></script>
+    <script src="justifiedGallery.min/jquery.justifiedGallery.min.js"></script>
+
+    <script>
+        $('#mygallery').justifiedGallery()
+        $('.group1').colorbox()
+    </script>
+
 </body>
 
 </html>
